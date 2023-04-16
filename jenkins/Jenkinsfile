@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Configure the Git plugin to check out the repository
-                git branch: 'master', url: 'https://github.com/iestarks/python.git'
+                git branch: 'main', url: 'https://github.com/iestarks/python.git'
                 
                 // Run any build steps that you need
                 sh 'mvn clean install'
